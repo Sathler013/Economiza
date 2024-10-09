@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Economiza+</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Economiza+</h1>
+        <nav>
+            <ul>
+                <li><a href="#calculadora">Calculadoras</a></li>
+                <li><a href="#dicas">Dicas de Economia</a></li>
+                <li><a href="#recursos">Recursos para Investimento</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="calculadora">
+            <h2>Calculadora de Orçamento</h2>
+            <div>
+                <label for="renda">Renda Mensal:</label>
+                <input type="number" id="renda" placeholder="Digite sua renda mensal">
+            </div>
+            <div>
+                <label for="despesas">Despesas Mensais:</label>
+                <input type="number" id="despesas" placeholder="Digite suas despesas mensais">
+            </div>
+            <button onclick="calcularOrcamento()">Calcular</button>
+            <h3 id="resultado"></h3>
+        </section>
+
+        <section id="dicas">
+            <h2>Dicas de Economia</h2>
+            <ul>
+                <li>Crie um Orçamento Mensal: Registre suas receitas e despesas para entender onde você pode cortar gastos. Use aplicativos de finanças para facilitar o acompanhamento.</li>
+                <br>
+                <li>Priorize a Poupança: Reserve uma parte da sua renda mensal para uma conta de poupança antes de gastar. Um bom objetivo é economizar pelo menos 20% da sua renda.</li>
+                <br>
+                <li>Evite Compras Impulsivas: Faça uma lista de compras e evite comprar itens que não estão nela. Espere 24 horas antes de tomar decisões de compra.</li>
+                <br>
+                <li>Pesquise Antes de Comprar: Compare preços e busque cupons de desconto antes de fazer uma compra, especialmente em itens de grande valor.</li>
+                <br>
+                <li>Reduza Despesas Fixas: Analise seus contratos de serviços, como internet e telefone, e busque opções mais baratas ou renegocie os valores.</li>
+                <br>
+                <li>Cozinhe em Casa: Prepare refeições em casa em vez de comer fora. Isso pode representar uma economia significativa no final do mês.</li>
+                <br>
+                <li>Aproveite Promoções: Fique atento a datas de promoções, como Black Friday ou liquidações de fim de estação, para comprar produtos que você precisa.</li>
+                <br>
+                <h2>Dicas de Investimentos</h2>
+                <li>Diversificação: Não coloque todo o seu dinheiro em um único tipo de investimento. Diversifique sua carteira entre ações, títulos, imóveis e fundos de investimento.</li>
+                <br>
+                <li>Fundos de Índice (ETFs): Considere investir em ETFs que seguem índices de mercado. Eles oferecem diversificação e geralmente têm taxas mais baixas.</li>
+                <br>
+                <li>Ações de Dividendos: Invista em empresas que pagam dividendos consistentes. Isso pode proporcionar uma fonte de renda passiva.</li>
+                <br>
+                <li>Tesouro Direto: Títulos do Tesouro Nacional são uma opção segura e acessível para pequenos investidores. Eles oferecem diferentes tipos de rendimento, como Tesouro Selic e Tesouro Prefixado.</li>
+                <br>
+                <li>Imóveis: Se você tiver capital suficiente, investir em imóveis para aluguel pode gerar uma renda passiva significativa e também valorização ao longo do tempo.</li>
+                <br>
+                <li>Criptomoedas: Embora voláteis, as criptomoedas podem fazer parte de uma carteira diversificada. Invista com cautela e apenas o que você pode perder.</li>
+                <h2>Locais para Colocar seu Dinheiro em 2024</h2>
+                <li>Contas de Poupança: Embora ofereçam rendimentos baixos, são seguras e oferecem liquidez imediata.</li>
+                <br>
+                <li>Certificados de Depósito (CDBs): Bancos oferecem CDBs que costumam ter retornos melhores que a poupança. Verifique as taxas e prazos.</li>
+                <br>
+                <li>Fundos Imobiliários (FIIs): Invista em fundos imobiliários para obter renda passiva por meio de aluguéis sem a necessidade de comprar imóveis físicos.</li>
+                <br>
+                <li>Ações de Empresas: Invista em ações de empresas com potencial de crescimento. Faça uma análise cuidadosa antes de escolher as ações.</li>
+                <br>
+                <li>Títulos Públicos: Investir no Tesouro Direto é uma forma segura e acessível de aplicar seu dinheiro.</li>
+                <br>
+                <li>Fundos de Investimento: Considere fundos mútuos ou fundos de investimento, que permitem diversificação sem que você precise selecionar os ativos individualmente.</li>
+                <br>
+                <li>Planos de Previdência Privada: Para o longo prazo, considere um plano de previdência privada. É uma forma de garantir um rendimento futuro e pode oferecer benefícios fiscais.</li>
+                <br>
+                <li>Aplicativos de Investimento: Utilize plataformas de investimento que oferecem acesso a ações, ETFs e criptomoedas de forma prática e segura.</li>
+                <br>
+                <li>Renda Fixa: Busque opções de renda fixa que oferecem rendimento previsível e baixo risco, como debêntures e letras de crédito.</li>
+                <br>
+                <li>Crowdfunding Imobiliário: Considere plataformas de crowdfunding que permitem investir em projetos imobiliários com um valor inicial baixo.</li>
+
+            </ul>
+        </section>
+
+        <section id="recursos">
+            <h2>Recursos para Investimento</h2>
+            <p>Confira alguns links úteis para aprender sobre investimentos:</p>
+            <ul>
+                <li><a href="https://www.investopedia.com" target="_blank">Investopedia</a></li><p>Um dos sites mais populares para aprender sobre finanças e investimentos, com uma vasta gama de artigos, tutoriais e guias.</p>
+
+                <li><a href="https://www.morningstar.com" target="_blank">Morningstar</a></li><p>Oferece análises de investimentos, relatórios de fundos e uma grande quantidade de recursos educativos sobre como investir.</p>
+
+                <li><a href="https://www.nerdwallet.com" target="_blank">NerdWallet</a></li><p>Um site que fornece conselhos financeiros e comparações de produtos financeiros, incluindo investimentos, contas de poupança e cartões de crédito.</p>
+                <li><a href="https://www.coursera.org/courses?query=investment" target="_blank">Coursera</a></li><p>Oferece cursos sobre investimentos de diversas universidades renomadas. Alguns cursos são gratuitos para auditar.</p>
+                <li><a href="https://www.fool.com" target="_blank">The Motley Fool</a></li><p>Um site de investimentos que fornece análises de ações, conselhos e uma comunidade de investidores.</p>
+                <li><a href="https://www.gov.br/cvm/pt-br" target="_blank">CVM</a></li>
+            </ul><p>O site da CVM oferece guias e informações sobre como investir de forma segura e responsável no Brasil.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Ferramenta de Planejamento Financeiro. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
